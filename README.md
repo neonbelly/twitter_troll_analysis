@@ -1,1 +1,2 @@
-# twitter_troll_analysis
+# Russian Twitter Troll Classification
+# This part is under construction
