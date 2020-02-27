@@ -1,6 +1,3 @@
-# Still a work in progress!
-
-
 # Russian Twitter Troll Classification
 
 # Summary
