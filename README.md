@@ -1,10 +1,12 @@
 # Still a work in progress!
+
+
 # Russian Twitter Troll Classification
 
 # Summary
 
 ## Purpose
-* Classification of troll accounts at either account level or individual tweet level
+* Classification of troll accounts at either the account level or individual tweet level
 
 ## Technologies Used:
 * [TwitterScraper](https://github.com/taspinar/twitterscraper/blob/master/twitterscraper/query.py "TwitterScraper") (Data scraping)
