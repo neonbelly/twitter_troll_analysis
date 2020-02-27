@@ -15,7 +15,7 @@
 
 ## Data Sources
 * Positive Case: [FiveThirtyEight Twitter bot data](https://github.com/fivethirtyeight/russian-troll-tweets/ "FiveThirtyEight")
-* Negative Case: Scraped tweets from verified users in 2018
+* Negative Case: [Scraped tweets from verified users in 2018](https://medium.com/@bansalsamarth/this-espn-analyst-comes-closest-to-what-the-median-twitter-verified-user-looks-like-c1818aafc6e7 "median-twitter-user")
 
 # Motivation/Objective
 The Russian Internet Research Agency (IRA) deployed "troll" Twitter accounts to misinform the American populace and cause political divides. FiveThirtyEight released 3 million verified tweets from these troll accounts from 2848 accounts for research. These accounts are fully capable of disguising as real accounts as they have a substantial amount of followers and follow other users, retweet Tweets, comment on Tweets, etc. Some troll accounts pose as legitimate news sources and link fake news articles that could miscontrue the truth when a user glances through their social media. Being able to quickly classify these fake accounts from real accounts and accurately removing them before they cause more damage and discord is a pertinent goal for social media sites like Twitter.
