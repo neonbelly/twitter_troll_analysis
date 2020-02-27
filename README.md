@@ -1,20 +1,21 @@
+# Still a work in progress!
 # Russian Twitter Troll Classification
 
-# Still a work in progress!
-
-## Technologies Used:
-TwitterScraper: https://github.com/taspinar/twitterscraper/blob/master/twitterscraper/query.py (Data scraping)
-Tableau (Visualization)
-CountVectorizer and Tfidif Vectorizer (Text Features)
-scikit-learn (Modeling)
-XGBoost (Modeling)
+# Summary
 
 ## Purpose
-Classification of troll accounts at either account level or individual tweet level
+* Classification of troll accounts at either account level or individual tweet level
+
+## Technologies Used:
+* [TwitterScraper]: (https://github.com/taspinar/twitterscraper/blob/master/twitterscraper/query.py "TwitterScraper") (Data scraping)
+* Tableau (Visualization)
+* CountVectorizer and Tfidif Vectorizer (Text Features)
+* scikit-learn (Modeling)
+* XGBoost (Modeling)
 
 ## Data Sources
-Positive Case: FiveThirtyEight Twitter bot data (https://github.com/fivethirtyeight/russian-troll-tweets/)
-Negative Case: Scraped tweets from verified users in 2018
+* Positive Case: FiveThirtyEight Twitter bot data (https://github.com/fivethirtyeight/russian-troll-tweets/)
+* Negative Case: Scraped tweets from verified users in 2018
 
 # Motivation/Objective
 The Russian Internet Research Agency (IRA) deployed "troll" Twitter accounts to misinform the American populace and cause political divides. FiveThirtyEight released 3 million verified tweets from these troll accounts from 2848 accounts for research. These accounts are fully capable of disguising as real accounts as they have a substantial amount of followers and follow other users, retweet Tweets, comment on Tweets, etc. Some troll accounts pose as legitimate news sources and link fake news articles that could miscontrue the truth when a user glances through their social media. Being able to quickly classify these fake accounts from real accounts and accurately removing them before they cause more damage and discord is a pertinent goal for social media sites like Twitter.
@@ -22,7 +23,7 @@ The Russian Internet Research Agency (IRA) deployed "troll" Twitter accounts to 
 ![](images/example.png)
 
 # The Data
-The content of the tweets are not necessarily the same amongst troll accounts either; FiveThirtyEight was able to identify four types of bot accounts: right-wing, left-wing, newsfeed, fearmongerers, and gamer accounts. I removed non-English tweets to standardize the positive and negative case for comparison. I scraped verified users from 2018 from this article (https://medium.com/@bansalsamarth/this-espn-analyst-comes-closest-to-what-the-median-twitter-verified-user-looks-like-c1818aafc6e7) of a variety of backgrounds (not necessarily only political) in order to best approximate what a standard Twitter feed would look like to the average user. Not only that, but the dataset was posted around the time the Russian troll dataset was released, making the comparison in terms of topics of the tweets more comparable to the nagative case. From the user handles in this dataset, I was able to pull past tweets from these users with information such as post date, retweets, links, etc and filtered the data to be a similar timeframes as the bot tweets to best approximate what a standard Twitter feed would entail.
+The content of the tweets are not necessarily the same amongst troll accounts either; FiveThirtyEight was able to identify four types of bot accounts: right-wing, left-wing, newsfeed, fearmongerers, and gamer accounts. I removed non-English tweets to standardize the positive and negative case for comparison. I scraped verified users from 2018 from this [article] (https://medium.com/@bansalsamarth/this-espn-analyst-comes-closest-to-what-the-median-twitter-verified-user-looks-like-c1818aafc6e7 "median-twitter-user") of a variety of backgrounds (not necessarily only political) in order to best approximate what a standard Twitter feed would look like to the average user. Not only that, but the dataset was posted around the time the Russian troll dataset was released, making the comparison in terms of topics of the tweets more comparable to the nagative case. From the user handles in this dataset, I was able to pull past tweets from these users with information such as post date, retweets, links, etc and filtered the data to be a similar timeframes as the bot tweets to best approximate what a standard Twitter feed would entail.
 
 ![](images/followingvsfollower.png)
 
